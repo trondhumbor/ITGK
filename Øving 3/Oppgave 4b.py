@@ -12,4 +12,4 @@ lastnames = [
 # Reversed reverserer innholdet i listen
 
 for firstname, lastname in zip(firstnames, reversed(lastnames)):
-	print(firstname, lastname)
+    print(firstname, lastname)

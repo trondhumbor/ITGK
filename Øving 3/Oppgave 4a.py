@@ -8,4 +8,4 @@ lastnames = [
 
 # Vi antar at listene er like lange. zip zipper sammen listene
 for firstname, lastname in zip(firstnames, lastnames):
-	print(firstname, lastname)
+    print(firstname, lastname)

@@ -6,5 +6,5 @@ def fibonacci(n):
     return numbers
 
 if __name__ == "__main__":
-	for x, z in enumerate(fibonacci(10)):
-		print("n:", x, "f(n):", z)
+    for x, z in enumerate(fibonacci(10)):
+        print("n:", x, "f(n):", z)

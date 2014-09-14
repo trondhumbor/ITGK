@@ -6,4 +6,4 @@ def fibonacci(n):
     return numbers[-1]
 
 if __name__ == "__main__":
-	print(fibonacci(10))
+    print(fibonacci(10))

@@ -11,4 +11,4 @@ lastnames = [
 # navnet være likt
 
 for firstname, lastname in zip(firstnames, lastnames):
-	print(firstname.capitalize(), lastname)
+    print(firstname.capitalize(), lastname)

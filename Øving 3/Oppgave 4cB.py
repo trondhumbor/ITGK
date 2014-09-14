@@ -10,4 +10,4 @@ lastnames = [
 # navnet være likt
 
 for firstname, lastname in zip(firstnames, reversed(lastnames)):
-	print(firstname.capitalize(), lastname)
+    print(firstname.capitalize(), lastname)
