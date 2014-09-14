@@ -1,0 +1,14 @@
+Trond Humborstad ITGK Øving 3 Oppgave 1
+
+a) Pseudokode er en overordnet beskrivelse av en prosedyre/algoritme.
+	Speilegg-steking:
+	* Hent ingredienser, sett på plate og panne.
+	* Kakk hull på egget og hell innholdet på pannen.
+	* Når egget er stekt, fjern egg fra pannen
+	* Skru av plate, fjern panne
+b) Et flytdiagram viser grafisk en overordnet beskrivelse av hvilke ledd en prosedyre/algoritme består av.
+c) Debugging er feilfjerning. Man kan dele inn i logiske og syntaktiske feil.
+	* Unit-testing, særlig aktuell for OOP. Sjekker hver modul.
+	* Manuell step-over/into
+d) Objektorientert programmering handler om abstraksjon og innkapsling. Man abstraherer bort kompleksitet gjennom
+innkapsling. Python støtter enkelte OOP-ideer, men er primært ikke et OOPspråk.
