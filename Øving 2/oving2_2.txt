@@ -1,0 +1,38 @@
+Øving 2 30. august 2014
+Trond Humborstad
+
+Oppgave 2)
+a)
+Programmet vil printe følgende:
+
+7 3
+5 4
+5 3
+7 3
+
+b) 
+
+# Globalt definerte variabler
+x = 5
+y = 3
+
+def main ():
+	# Nye variabler lokalt for main
+	x = 7
+	y = 3
+
+	print (x , y ) # Skriver ut variablene som definert lokalt innenfor main
+	miks (y , x )
+	tull ()
+	print (x , y ) # Skriver ut variablene som definert lokalt innenfor main
+
+def miks (x , y ):
+	x = 5 # Redefinerer variablene som kom inn som parametere
+	y = 4
+	print (x , y )
+
+def tull ():
+	print (x , y ) # Skriver ut de globale variablene
+
+
+main ()

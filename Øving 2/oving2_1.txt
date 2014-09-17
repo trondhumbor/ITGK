@@ -1,0 +1,15 @@
+Øving 2 30. august 2014
+Trond Humborstad
+
+Oppgave 1)
+a) Noen forskjeller mellom HDD og RAM:
+   * Data lagret på en harddisk er persistent, imotsetning til RAM hvor dataene blir tapt ved strømbrudd.
+   * RAM er et temporært lager for programfiler som blir brukt av systemet, disk blir brukt for permanent lagring.
+b) Den viktigste forskjellen er at ROM bare er read-only, mens RAM er både read/write.
+c) Mye kjappere oppslag, slipper å søke igjennom potensiellt sett store deler av minnet for å finne en gitt verdi.
+d)
+	1) "stuff" er funksjonsnavnet, "x" er et parameter til "stuff"
+	2)
+		* Manglende kolon etter funksjonsdeklarasjon
+		* Bruk av feil quotemark
+		* Feil operator for gangeoperasjonen. x ** y tilsvarer x^y
