@@ -6,7 +6,7 @@ def closestToN(n):
     elements = 0
 
     # math.pow tilsvarer **
-    while (iterativeSum + math.pow(currentInteger, 2)) < n:
+    while (iterativeSum + math.pow(currentInteger, 2)) <= n:
         iterativeSum += math.pow(currentInteger, 2)
         currentInteger += 1
         elements += 1
