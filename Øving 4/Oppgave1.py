@@ -27,8 +27,9 @@ def main():
     # Det star ikke i oppgaveteksten at vi skal lagre svaret
     input("Hvor mange timer bruker du pa sosiale medier?: ")
 
-    # Jeg tror ikke program-minnet blir clear-a etter at programmet terminerer, men det blir markert som ledig for andre programmer.
+    # Jeg tror ikke program-minnet blir clear'a etter at programmet terminerer, men det blir markert som ledig for andre programmer.
     # Om dette stemmer, kan man hente ut det som la i minnet nar programmet terminerte.
+    # Hvis minnet faktisk blir clear'a, er variablene og annen programdata lagret i minnet tapt for godt.
     # Evt. kan man skrive variablene til en persistent lagringsplass, da vil det alltid kunne faes tak i pa nytt.
 
     # Oppgave 2 er den samme som i oving 3.
