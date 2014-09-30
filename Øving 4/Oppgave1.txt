@@ -1,7 +1,7 @@
 Oppgave 1:
 a)
 
-Alle oppegående mennesker vet at ASCII-verdien for A er 65.
+Vi vet av ASCII-tabellen at ASCII-verdien for A er 65.
 For å konvertere 65 til binær, gjør vi følgende:
 65 = 2 * 32 + 1
 32 = 2 * 16 + 0
