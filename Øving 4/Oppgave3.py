@@ -18,15 +18,16 @@ def billettpris(alder):
         print("Billettpris: 20kr. Prisklasse: Ungdom")
         return
     elif alder > 5:
-        print("Billettpris: 10. Prisklasse: Barn")
+        print("Billettpris: 10kr. Prisklasse: Barn")
         return
     elif alder > 0:
         print("Billettpris: Gratis. Prisklasse: Smaabarn")
         return
 
 if __name__ == "__main__":
-    test = True
+    test = False
     if test:
+        # Vi ble bedt i oppgaven aa teste funksjonen for de ulike priskategoriene
         billettpris(3)
         billettpris(12)
         billettpris(18)
