@@ -1,0 +1,24 @@
+Oppgave 1:
+a)
+
+Alle oppegående mennesker vet at ASCII-verdien for A er 65.
+For å konvertere 65 til binær, gjør vi følgende:
+65 = 2 * 32 + 1
+32 = 2 * 16 + 0
+16 = 2 * 8 + 0
+8 = 2 * 4 + 0
+4 = 2 * 2 + 0
+2 = 2 * 1 + 0
+1 = 2 * 0 + 1
+Vi har dermed at 1000001 = 65 = A
+
+b)
+
+"Posisjonssystemet er genialt" - Christian Schau (2014)
+
+01001100 = 2^6 + 2^3 + 2^2 = 76. 76 tilsvarer L
+01101001 = 2^6 + 2^5 + 2^3 + 2^0 = 105. 105 tilsvarer i
+01110011 = 2^6 + 2^5 + 2^4 + 2^1 + 2^0 = 115. 115 tilsvarer s
+01110000 = 2^6 + 2^5 + 2^4 = 112. 112 tilsvarer p
+
+c) Metadata er data om data.
