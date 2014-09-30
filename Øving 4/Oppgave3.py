@@ -5,27 +5,27 @@ def billettpris(alder):
     # Python burde skaffe seg et switch-case-statement, slik som
     # andre programmeringsspråk.
 
-    if alder > 60:
+    if alder >= 60:
         print("Billettpris: Gratis. Prisklasse: Honnoer")
         return
-    elif alder > 26:
+    elif alder >= 26:
         print("Billettpris: 40kr. Prisklasse: Voksen")
         return
-    elif alder > 21:
+    elif alder >= 21:
         print("Billettpris: 30kr. Prisklasse: Student")
         return
-    elif alder > 16:
+    elif alder >= 16:
         print("Billettpris: 20kr. Prisklasse: Ungdom")
         return
-    elif alder > 5:
+    elif alder >= 5:
         print("Billettpris: 10kr. Prisklasse: Barn")
         return
-    elif alder > 0:
+    elif alder >= 0:
         print("Billettpris: Gratis. Prisklasse: Smaabarn")
         return
 
 if __name__ == "__main__":
-    test = False
+    test = True
     if test:
         # Vi ble bedt i oppgaven aa teste funksjonen for de ulike priskategoriene
         billettpris(3)
