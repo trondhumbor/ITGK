@@ -8,7 +8,11 @@ antall_timer_sosmedier = 0
 
 def validate(userInput):
     if str(userInput) == "hade":
-        print(antall_kvinner, antall_menn, antall_sosmedier, antall_facebook, antall_timer_sosmedier)
+        print("Antall kvinner",antall_kvinner,
+              "Antall menn", antall_menn,
+              "Antall sosmed", antall_sosmedier,
+              "Antall facebook", antall_facebook,
+              "Antall timer sosmed", antall_timer_sosmedier)
         sys.exit()
 
 def getInput(querystring):
