@@ -1,32 +1,36 @@
 __author__ = "Tsh"
 
-# Greedy algorithm incoming
+import random
 
-pricePerGram = 0.5
-availableCoins = [20, 10, 5, 1, 0.5]
+questions = [
+    "Hvordan går det med deg, ",
+    "Hvordan liker du å hete ",
+    "Hvordan liker du å programmere, "
+    # , "How about a nice game of chess?"
+    # , "Do you want to play Global Thermonuclear War?"
+]
 
-def getValueFromWeigth(weight):
-    return weight * 0.5
+followupQuestions = [
+    "Hvorfor synes du ",
+    "Hva mener du med ",
+    "Kan du si noe mer om "
+    # , "Are you sure you don't rather want to play a nice game of chess?"
+]
 
-def greedy(valueToGive):
-    coinsToReturn = [0, 0, 0, 0, 0]
-    for index, coin in enumerate(availableCoins):
-        d = 0 # d counts the coins of denomination c_i used
-        while valueToGive >= coin:
-            d += 1 # add a coin of denomination c_i
-            valueToGive -= coin
-        coinsToReturn[index] = d
-    return coinsToReturn
+smalltalk = [
+    "Fint du synes det ",
+    "Så bra ",
+    "Helt enig "
+    # , "Long time since you've logged on, Professor Falken"
+]
 
-def main():
-    teeth = [95 , 103 , 71 , 99 , 114 , 64 , 95 , 53 , 97 , 114 ,
-             109 , 11 , 2 , 21 , 45 , 2 , 26 , 81 , 54 , 14 ,
-             118 , 108 , 117 , 27 , 115 , 43 , 70 , 58 , 107
-    ]
-    for tooth in teeth:
-        value = getValueFromWeigth(tooth)
-        coinsToReturn = greedy(value)
-        print(value, coinsToReturn)
+def doYouWantToPlayAGame():
+    username = str(input("Hva heter du? "))
+    answer = ""
+    while answer != "hade":
+        answer = str(input(random.choice(questions) + username + "? "))
+        answer = str(input(random.choice(followupQuestions) + answer + ", " + username + "? "))
+        print(random.choice(smalltalk))
 
 if __name__ == "__main__":
-    main()
+    doYouWantToPlayAGame()

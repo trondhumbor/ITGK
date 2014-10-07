@@ -1,51 +1,32 @@
 __author__ = "Tsh"
 
-# Dette var en veldig merkelig oppgave, med tidvis rar formulering
-# Tror jeg har tolket den rett.
+# Greedy algorithm incoming
 
-vec1 = []
+pricePerGram = 0.5
+availableCoins = [20, 10, 5, 1, 0.5]
 
-# a
-def getInput():
-    return [int(element) for element in input("Skriv inn xyz-verdiene på formen: x y z ").split(" ")]
+def getValueFromWeigth(weight):
+    return weight * pricePerGram
 
-# b
-def prettyprint():
-    global vec1
-    vec1 = getInput()
-    print("x: ", vec1[0], " y: ", vec1[1], " z: ", vec1[2])
+def greedy(valueToGive):
+    coinsToReturn = [0, 0, 0, 0, 0]
+    for index, coin in enumerate(availableCoins):
+        d = 0 # d counts the coins of denomination c_i used
+        while valueToGive >= coin:
+            d += 1 # add a coin of denomination c_i
+            valueToGive -= coin
+        coinsToReturn[index] = d
+    return coinsToReturn
 
+def main():
+    teeth = [95 , 103 , 71 , 99 , 114 , 64 , 95 , 53 , 97 , 114 ,
+             109 , 11 , 2 , 21 , 45 , 2 , 26 , 81 , 54 , 14 ,
+             118 , 108 , 117 , 27 , 115 , 43 , 70 , 58 , 107
+    ]
+    for tooth in teeth:
+        value = getValueFromWeigth(tooth)
+        coinsToReturn = greedy(value)
+        print(value, coinsToReturn)
 
-# c
-def vectormultiplication(vec, scal):
-    newvec = []
-    for element in vec:
-        newvec.append(element * scal)
-    return newvec
-
-def doVectorMultiplication():
-    global vec1
-    inputscalar = int(input("Skriv inn en skalar: "))
-    vec1 = vectormultiplication(vec1, inputscalar)
-    print(vec1)
-
-# d
-def vectorlength(vec):
-    veclen = ((vec[0]**2) + (vec[1]**2) + (vec[2]**2))**0.5
-    print(veclen)
-
-def vectorMultiplicationModified(vec, scal):
-    newvec = []
-    vectorlength(vec)
-    for element in vec:
-        newvec.append(element * scal)
-    vectorlength(vec)
-    return newvec
-
-# e
-def indreprodukt(vec1, vec2):
-    return (vec1[0]*vec2[0]) + (vec1[1]*vec2[1]) + (vec1[2]*vec2[2])
-
-def lesInnOgMultipliserVec1ogVec2():
-    vec2 = getInput()
-    print(indreprodukt(vec1, vec2))
+if __name__ == "__main__":
+    main()
