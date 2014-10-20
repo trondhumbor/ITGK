@@ -26,16 +26,20 @@ def strreverse(string):
 def palindrome(string):
     return strcmp(string, strreverse(string))
 
-# d) det står ikke noe i oppgaveteksten om at man ikke kan bruke index-funksjonen
+# d)
 
 def contains(str1, str2):
     if not str2 in str1:
         return False
-    return str1.index(str2)
+    startpoint = 0
+    for index in range(len(str1)):
+        if str1[index:(index+len(str2))] == str2:
+            startpoint = index
+    return startpoint
 
 
 if __name__ == "__main__":
     #print(strcmp("Hello", "Hello"))
     #print(strreverse("Hello"))
     #print(palindrome("radar"))
-    print(contains("Hello", "ello"))
+    print(contains("Hello", "llo"))
